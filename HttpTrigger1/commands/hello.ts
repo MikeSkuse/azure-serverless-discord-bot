@@ -32,6 +32,6 @@ export class HelloCommand extends SlashCommand {
   async run(ctx: CommandContext): Promise<string> {
     return ctx.options.food
       ? `You like ${ctx.options.food}? Nice!`
-      : `Hello, ${ctx.user.username}!`;
+      : `Howdy, ${ctx.user.username}!`;
   }
 }
